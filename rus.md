@@ -13,8 +13,8 @@ JavaScript схож с HTML и CSS тем, что все они — реализ
 
 ## Так что же такое, ECMAScript?
 
-ECMAScript — это стандарт, который развивает и поддерживает ассоциация ECMA
-International. Он был принят Генеральной Ассамблеей ECMA в июне 1997.
+ECMAScript — это стандарт, который развивает и поддерживает ассоциация Ecma
+International. Он был принят Генеральной Ассамблеей Ecma в июне 1997.
 А если точнее, ECMAScript — это стандарт ECMA-262, который называется
 «Спецификация языка ECMAScript», и у которого было несколько редакций.
 На настоящий момент актуальна редакция 5.1, она была принята
@@ -38,50 +38,48 @@ JavaScript, например, V8 в Chrome, SpiderMonkey в Firefox, и так �
 
 ## Откуда взялась cпецификация ECMA-262?
 
-The Ecma International Technical Committee 39 (aka TC39) is a committee of very
-smart people, which is associated with a group of participants that are also
-very smart. They get together for committee meetings approximately every two
-months that are driven by pre-defined agendas.
+Ecma International Technical Committee 39 (он же TC39) — комитет очень умных
+людей, он связан с группой участников, которые в свою очередь тоже очень
+умны. Они собираются вместе на встречах комитета приблизительно каждые два
+месяца и обсужают заранее подготовленные списки вопросов.
 
-TC39 is tasked with maintaining and updating the aforementioned ECMAScript
-specification via a consensual process. This includes the language syntax,
-semantics, and libraries and complementary technologies that support the
-language.
+Задачей TC39 является поддержка и обновление упомянутой ранее спецификации
+ECMAScript, после обсуждения и всеобщего согласия. Сюда относятся синтаксис
+языка, семантика, библиотеки и сопутствующие технологии, на которых основывается
+язык.
 
-This all happens via a process defined by TC39. It all starts with a feature
-sketch that’s made for an ECMAScript specification enhancement or modification,
-which often comes from developer community suggestions, or TC39 participants
-themselves. If deemed worthy to pursue by the committee, the sketch is promoted
-to an official proposal and one or more “champions” are assigned to it.
+Этот процесс определён TC39. Всё начинается с наброска функционала, расширяющего
+или изменяющего спецификацию. Такие наброски часто исходят из предложений
+сообществ разработчиков, или же от самих участников TC39. Если предложение
+оказывается стоящим, набросок получает статус официального предложения, и
+за него становятся отвественными один или несколько «чемпионов».
 
-The life of the proposal from idea to published state then follows a series of
-well-defined stages. These stages are numbered zero to four, and are in this
-respective order: Strawman, Proposal, Draft, Candidate, and Finished. Advancing
-to the next stage in all cases requires TC39 approval. If a proposal has made it
-to stage 4, then you can expect to see it included in the next officially
-published edition of the ECMA–262 standard specification, and ultimately in
-environments that execute JavaScript. Refer to the referenced process document
-for more information.
+Затем на своём пути от идеи до публикации предложение проходит ряд определённых
+стадий. Эти стадии пронумерованы от нуля до четырёх: Чучело, Предложение,
+Черновик, Кандидат и Завершено. Переход на любую следующую стадию требует
+одобрения TC39. Если предложение добралось до стадии 4, можно ожидать, что его
+включат в следующую официально опубликованную редакцию спецификации стандарта
+ECMA-262, и в итоге оно появится в окружении, которое выполняет JavaScript.
+Больше об этом процессе вы можете узнать на сайте Ecma.
 
-## Current ECMAScript Compatibility
+## Совместимность с текущей редакцией ECMAScript
 
-ECMAScript 6 (aka ES.Next) is on its way to becoming mainstream and widely used
-. Recall that the current version of ECMAScript is 5.1, with so-called “Harmony
-” encompassing the upcoming 6 and 7 versions.
+ECMAScript 6 (он же ES.Next) уже джижется по направлению к повсеместному
+применению. Напомню, текущая версия ECMAScript — 5.1, а так называемая
+«Harmony» включает в себя возможности из предстоящих 6 и 7 версий.
 
-While many Harmony features are already implemented in modern browsers, and in
-Node.js using the “harmony” flag, there are still other features that require a
-compiler/transpiler to use (discussed shortly
-).
+Хотя множество возможностей, которые предоставляет Harmony, уже есть в
+современных браузерах и Node.js с флагом `--harmony`, есть другие фичи, которые
+требуют компилятора/транскомпилятора (мы вернёмся к этой теме).
 
-Juriy “kangax” Zaytsev, author of the *Perfection Kills* blog, has created
-and maintains an excellent set of ECMAScript compatibility tables. These tables
-are organized by ECMAScript feature and indicate compatibility of that feature
-for a given ECMAScript compiler, desktop browser (vendor and version), server
-framework (e.g., Rhino, PhantomJS, Node.js), and iOS mobile operating system.
+Юрий «kagnax» Зайцев, автор блога *Perfection Kills*, создал и поддерживает
+отличный набор сводных таблиц по совместимости ECMAScript. При помощи этих
+таблиц можно выбрать фичу ECMAScript и узнать, насколько с ней совместимы
+компиляторы, десктопный браузеры (разных версий), серверные фреймворки (Rhino,
+PhantomJS, Node.js) и операционная система iOS.
 
-In addition to these tables, *MDN* often provides feature compatibility
-tables for desktop and mobile browsers.
+В дополнение тем таблицам, на *MDN* часто можно найти таблицы совестимости для
+десктопных и мобильных браузеров.
 
 ## Can I Use Upcoming ECMAScript Features Now?
 
