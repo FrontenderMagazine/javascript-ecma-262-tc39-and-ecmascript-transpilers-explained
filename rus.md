@@ -81,72 +81,66 @@ PhantomJS, Node.js) и операционная система iOS.
 В дополнение тем таблицам, на *MDN* часто можно найти таблицы совестимости для
 десктопных и мобильных браузеров.
 
-## Can I Use Upcoming ECMAScript Features Now?
+## Можно ли уже сейчас пользоваться функционалом из будущей редакции ECMAScript?
 
-Yes you can. Some of these features are already implemented in certain browsers
-and Node, but many require the use of a third-party ECMAScript transpiler. These
-transpiler’s are sometimes also referred to as a compiler. Technically there is
-a difference between a transpiler and a traditional compiler.
+Да, можно. Некоторые из возможностей уже есть в определённых браузерах и в Node,
+но многие другие требуют стороннего транскомпилятора ECMAScript. Эти
+транскомпиляторы часто называют просто компиляторами. Но технически между
+транскомпилятором и обычным компилятором есть разница.
 
-Regarding ECMAScript transpilers, the input language is an upcoming version of
-the language specification (e.g., EC 6), which is then compiled to a prior, more
-stable and widely compatible version of the same specification (e.g., EC 5.1).
-For the remainder of this article we will simply refer to them as transpilers.
+Для транскомпиляторов ECMAScript исходный язык — это будущая версия спецификации
+(т.е., ES 6), которые далее уомпилируется в предыдущую, более стабильную и
+распространённую версию той же спецификации (т.е., ES 5.1). Далее в этой статье
+я буду называть их просто транскомпиляторами.
 
-There are plenty of resources online about writing Harmony code today, and
-specific transpilers, including what they can be used for. Refer to the list at
-the end of this article for some resources worth checking out.
+В интернете есть много ресурсов, посвящённых написанию кода на Harmony уже
+сегодня и различным транскомпиляторам, в том числе тому, для чего их можно
+использовать. В конце этой статьи есть список ресурсов, с которыми стоит
+ознакомиться.
 
-## Should I Use Upcoming ECMAScript Features Now?
+## Стоит ли сейчас использовать функционал будущей редакции ECMAScript?
 
-The answer really depends on if you’re talking about learning and playing
-around with upcoming language features, or actually employing a transpiler and/
-or these features in production.
+Ответ зависит от того, что вы собираетесь делать: поизучать и поиграться с новым
+функционалом, или по-настоящему использовать транскомпилятор и новый функционал
+в продакшне.
 
-In the latter case, I would say it really depends, the most important
-considerations being what stage in the process the feature proposal is in, and
-how widely supported it is in JavaScript execution environments. If it’s already
-supported across all environments that your code will run, then it’s probably a
-safe bet to go for it, and you wouldn't even need a transpiler in this case.
+Во втором случае, я бы сказал, что это ещё прежде всего зависит от того, в
+какой стадии находится предложение этого функционала, и то, насколько широко
+он поддерживается в окружениях JavaScript. Если функционал и так поддерживается
+во всех окружениях, где ваш код будет запускаться, то, возможно, можно им
+пользоваться со спокойной душой, и в этом случае даже не придётся пользоваться
+транскомпилятором.
 
-The more mature and advanced in the process the feature is, the more likely it
-is to remain the same in the final published specification. Many of these
-features however (EC7, strawman, etc.), are still in early stages of the process
-and may be changed or removed from the final specification. In these cases, it
-may not be a good idea to use features that may not be in the final
-specification, or are subject to major changes before publication.
+Чем более зрелым и проработанным становится функционал, тем больше вероятность,
+что он останется неизменным при окончательной публикации стандарта. Однако,
+множество функциональностей (ES 7, Чучело, и т.п.) всё ещё в ранних стадиях
+процесса, и они могут быть изменены или удалены из окончательной спецификации.
+В этих случаях пользоваться функционалом, который может не войти в финальную
+версию или значительно измениться,— не самая разумная мысль.
 
-In the former case, I think it’s a great idea to use a transpiler to get
-ahead of the game. People often talk about keeping their skills up to date on
-the latest technologies, and for good reason given how fast these things change.
-Learning upcoming ECMAScript features takes this to a whole new level, in that
-you're not learning something retroactively and reactively, but before it’s
-officially released. This is a much more proactive approach to professional
-development, and opportunities like this are few and far between.
+В первом же случае, мне кажется, пользоваться транскомпилятором и быть на острие
+прогресса — это замечательно. Люди часто говорят о том, что следует подновлять
+свои навыки, изучая последние технологии, и это неспроста, учитывая как часто
+всё меняется. Изучение особенностей будущего ECMAScript даёт вам большие
+преимущества, в том смысле, что вы не изучаете что-то ретроактивно и вынужденно,
+а ещё до того, как это официально выпущено. Это более проактивный подход к
+профессиональной разработке, и такие возможности попадаются не так уж и часто.
 
-Remember that these features are being added to the language for reasons
-approved by the smart TC39 participants, which includes improving things like
-language quality, abstraction, usability, etc. Learning these features in
-advance will allow you to be up and running without delay once these new changes
-are officially published and widely supported. You can also position yourself as
-a JavaScript expert in your organization, who is able to identify new language
-features that can offer code and product improvements.
+Помните, что этот функционал добавляется в язык неспроста, причины, по которым
+умные люди из TC39 это делают: улучшение качества языка, абстрагирования,
+удобства пользования и другие. Изучите эти новшества заранее, и к тому моменту,
+как они будут официально опубликованы и станут везде поддерживаться, вы сможете
+не теряя времени сразу приняться за работу. Вы также можете позиционировать
+себя как эксперта по JavaScript в своей организации, способного предложить
+новые особенности языка, позволяющие улучшить как код, так и сам продукт.
 
-## Summary
+## Заключение
 
-JavaScript is an amazing, powerful, and ubiquitous programming language. To
-become a true JavaScript expert, I highly recommend reading the ECMA–262
-specification on which it’s based. It’s also important to understand where the
-specification comes from, how it’s maintained, and what processes are used to
-evolve the language. Lastly, understanding what transpilers are and how they're
-used can certainly help you get ahead of the game. Who knows, maybe you or I can
-be a TC39 member someday.
+JavaScript — удивительный, мощный и широко распространённый язык. Чтобы стать
+настоящим экспертом в области JavaScript, я рекомендую прочитать спецификацию
+ECMA-262, на которой он основан. Также важно понимать, откуда эта
+спецификация берётся, как она поддерживается и какие процессы применяются при
+развитии языка. Наконец, понимание того, что такое транскомпиляторы и как ими
+пользоваться, без сомнения дадут вам преимущества. Кто знает, может быть, вы
+или я когда-нибудь станем членами TC39.
 
-**About the Author**: [Alex Castrounis][innoarchitech] founded InnoArchiTech. To learn more
-about him and InnoArchiTech, visit[innoarchitech.com][innoarchitech]. Sign up for the
-InnoArchiTech [newsletter][newsletter] for the latest content updates, and you can follow
-InnoArchiTech on Twitter at[@innoarchitech][twitter].
-
- [innoarchitech]: http://innoarchitech.com/about/?utm_source=medium&utm_medium=post&utm_content=aboutlink&utm_campaign=republish
- [newsletter]: http://innoarchitech.com/newsletter/?utm_source=medium&utm_medium=post&utm_content=aboutlink&utm_campaign=republish
- [twitter]: https://twitter.com/innoarchitech
